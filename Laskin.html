@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML-laskin</title>
+        <script>
+            function laskeSumma() {
+                console.log("Nappia klikattu.");
+                let luku1 = document.getElementById("luku1").value;
+                let luku2 = document.getElementById("luku2").value;
+                
+                let summa = parseInt(luku1) + parseInt(luku2);
+                alert("Summa on: " + summa);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>HTML-laskin</h1>
+        <p>
+            Luku 1: <input type="number" id="luku1" />
+        </p>
+        <p>
+            Luku 2: <input type="number" id="luku2" />
+        </p>
+        <p>
+            <button onclick="laskeSumma()">Laske summa</button>
+        </p>
+    </body>
+</html>

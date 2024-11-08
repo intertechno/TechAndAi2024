@@ -1,0 +1,73 @@
+﻿@model List<Customer>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script>
+    function laskeSumma() {
+        console.log("Nappia klikattu.");
+        let luku1 = document.getElementById("luku1").value;
+        let luku2 = document.getElementById("luku2").value;
+
+        let summa = parseInt(luku1) + parseInt(luku2);
+        alert("Summa on: " + summa);
+    }
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h1>HTML-laskin</h1>
+<p>
+    Luku 1: <input type="number" id="luku1" />
+</p>
+<p>
+    Luku 2: <input type="number" id="luku2" />
+</p>
+<p>
+    <button class="btn btn-primary" onclick="laskeSumma()">Laske summa</button>
+</p>
+
+<hr />
+
+<h1>Asiakkaat</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Yritys</th>
+            <th>Kontakti</th>
+            <th>Maa</th>
+            <th>Puhelin</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@customer.CompanyName</td>
+                    <td>@customer.ContactName</td>
+                    <td>@customer.Country</td>
+                    <td>@customer.Phone</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@*
+@for (int i = 0; i < 10; i++)
+{
+    <p>@i</p>
+}
+
+@{
+        int[] luvut = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        foreach (var luku in luvut)
+        {
+            <p>@luku</p>
+        }
+}
+*@

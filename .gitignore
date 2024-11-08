@@ -1,0 +1,27 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/DotNet/ArvaaLukuPeli/.vscode
+/DotNet/ArvaaLukuPeli/bin/Debug/net8.0
+/DotNet/ArvaaLukuPeli/obj
+/DotNet/AspNetMvcLaskin/.vs
+/DotNet/AspNetMvcLaskin/bin/Debug/net8.0
+/DotNet/AspNetMvcLaskin/obj
+/DotNet/HelloWorld/bin/Debug/net8.0
+/DotNet/HelloWorld/obj
+/DotNet/LukujenSumma/.vscode
+/DotNet/LukujenSumma/bin/Debug/net8.0
+/DotNet/LukujenSumma/obj
+/DotNet/Merkkijonot/bin/Debug/net8.0
+/DotNet/Merkkijonot/obj
+/DotNet/Numerotyypit/bin/Debug/net8.0
+/DotNet/Numerotyypit/obj
+/DotNet/OlioOhjelmointi/.vscode
+/DotNet/OlioOhjelmointi/bin/Debug/net8.0
+/DotNet/OlioOhjelmointi/obj
+/DotNet/TiedostonLukujenSumma/.vscode
+/DotNet/TiedostonLukujenSumma/bin/Debug/net8.0
+/DotNet/TiedostonLukujenSumma/obj
+/Python/__pycache__
